@@ -1,0 +1,20 @@
+<h1>Amsilla OS</h1>
+<h3 id='j'>Please wait...</h3>
+<script>
+	const tosay = ['Closing apps...', 'Logging out...', "Updating code...", 'Cleaning up...']
+	var i = 0
+	setInterval(function(){
+		document.getElementById("j").innerText = tosay[i]
+		i++
+	},2000)
+	setTimeout(function(){
+		window.location.replace('index.html')
+	}, 2000*tosay.length)
+</script>
+<style>
+	body {
+		background:black;
+		color:white;
+		font-family: 'Courier New', Courier, monospace;
+	}
+</style>

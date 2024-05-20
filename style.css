@@ -1,0 +1,60 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+	color:black;
+	overflow:hidden;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #111;
+    color: white;
+  }
+	.window {
+		background:#222 !important;
+	}
+	.taskbar {
+		background: black;
+	}
+}
+
+.taskbar {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+	user-select: none;
+}
+.taskbar img {
+	cursor:pointer;
+}
+
+.windows-container {
+  position: relative;
+}
+
+.window {
+  position: fixed;
+  border: 1px solid #ccc;
+  background-color: white;
+  width: 300px;
+  height: 200px;
+	resize:both;
+	overflow: auto;
+}
+.window .nav {
+	cursor:grab;
+  background: black;
+  color: white;
+}
+.window .nav:active {
+	cursor:grabbing;
+}
+button {
+	padding:10px;
+	background:#334;
+	color:white;
+}
+button:hover{
+	background:#445;
+}
